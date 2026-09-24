@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        maven 'mvn_3_6_3'
+        maven 'M3'
     }
     triggers {
         cron('H/55 * * * 1-5')
@@ -9,7 +9,7 @@ pipeline {
     options {
         timestamps()
         buildDiscarder logRotator(daysToKeepStr: '7',
-                                   numToKeepStr: '14' )
+                                   numToKeepStr: '14')
         timeout(time: 10, unit: 'MINUTES')
     }
     stages {
