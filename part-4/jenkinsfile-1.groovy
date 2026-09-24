@@ -15,7 +15,7 @@ pipeline {
     stages {
         stage('Get-code') {
             steps {
-                git branch: 'main', url: 'https://github.com/elestopadov/jenkins-example-app.git'
+                git branch: 'main', url: 'https://github.com/1yunker/jenkins-course-example.git'
             }
         }
         stage('Build') {
