@@ -12,7 +12,7 @@ pipeline {
                 stage('Deploy to Dev-1') {
                     steps {
                         echo 'Deploy to dev-1'
-                        sleep 25
+                        sleep 20
                     }
                     post {
                         success {
